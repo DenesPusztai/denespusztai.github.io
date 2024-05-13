@@ -1,0 +1,40 @@
+.hasab {
+max-width: 450px;
+margin-right: 20px; 
+float: left;
+}
+
+
+footer{
+float: left;
+padding: 10px;
+
+
+}
+body{
+    width: 960px;
+    margin: auto;
+    background-color: #d2691e;
+    text-align: justify;
+}
+
+h1{
+     text-decoration: underline 2px solid #a52a2a;
+}
+li{
+    color: white;
+    padding: 6px;
+    display: inline;
+    min-width: 50px;
+    border-right: 2px solid white;
+}
+
+h2{
+    width: 96%;
+    background-color: #cd853f;
+    font-style: italic;
+}
+img{
+    width: 100px;
+    float: left;
+}
