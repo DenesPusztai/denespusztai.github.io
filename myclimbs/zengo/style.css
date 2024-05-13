@@ -3,6 +3,7 @@
     margin: auto;
 	background-color: rgb(239, 243, 199);
     border-radius: 20px;
+    padding: 5px;
     
 }
 body{
@@ -12,14 +13,12 @@ body{
 #imageright{
     margin-left: 20px;
     width: 300px;
-    
     height: 400px;
+
 
 }
 #imageleft{
     margin-right: 35px;
-   
-
     width: 280px;
     height: 220px;
 	
@@ -42,7 +41,11 @@ a:hover{
 }
 #bal{
     float: left;
+    border-radius: 20px;
+    border: 1px solid forestgreen;
 }
 #jobb{
     float: right;
+    border: 1px solid forestgreen;
+    border-radius: 10px;
 }
