@@ -1,119 +1,212 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Honfoglaló</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
-  <header class="fejlec">
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Pusztai Dénes</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menü megnyitása">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<title>Pusztai Dénes</title>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<style>
+#sarga{
+    color: white;
+  }
+.a #sarga :hover{
+  color: yellow;
+}
+
+.fejlec li #sarga:hover{
+  color: yellow;
+}
+body {
+  background-image: url(fooldalkepek/latkep2.jpg); /* The image used for background */
+  background-position:center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  width:100%;
+  height: 20%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+.name {
+  margin-top: 15px !important;
+}
+
+.w3-theme-d3 {
+  background-color: rgba(42, 169, 219, 0.6) !important;
+}
+
+.w3-theme-d3:hover {
+  background-color: rgba(42, 169, 219, 0.8) !important;
+}
+
+a {
+  font-size: x-large;
+}
+
+.w3-border {
+  border: 3px solid #ccc !important;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container a {
+  width: 80%;
+}
+.links-container a:hover{
+  color: yellow;
+}
+
+.profession {
+  font-size: 14px;
+}
+
+
+
+.icons {
+  display: flex;
+  gap: 40px;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons a svg {
+  fill: #d0ecf7;
+  transform: scale(1.5);
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: auto;
+  }
+
+  .profession {
+    font-size: 24px;
+  }
+}
+
+.container-fluid{
+  background-color:rgba(59, 58, 58, 0.445);
+  text-align: center;
+}
+.dropdown-menu{
+  background-color: rgba(59, 58, 58, 0.445);
+}
+.padding{
+  padding: 40%;
+}
+.subscribe{
+  padding: 5px;
+}
+.links-container{
+  background-color: rgba(59, 58, 58, 0.445);
+  padding: 100px;
+  
+}
+.card{
+  background-color: rgba(59, 58, 58, 0.445);
+  text-align: center;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+
+}
+.dropdown-item:hover{
+  background-color: rgba(59, 58, 58, 0.445);
+  
+
+}
+.navbar{
+  background-color: black;
+  
+}
+
+</style>
+
+  <body>
+    <header class="fejlec">
+      <nav class="navbar  navbar-expand-sm navbar-dark ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-          <ul class="navbar-nav align-items-lg-center gap-lg-2">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/profile.php?id=100089309928528" target="_blank" rel="noopener" aria-label="Facebook">
-                <i data-feather="facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" aria-label="YouTube">
-                <i data-feather="youtube"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" aria-label="Instagram">
-                <i data-feather="instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mechwart.html">Fizetés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="honfoglalo.html">Kapcsolat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="troli.html">Belépés</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="zengohegy.html">Regisztráció</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <div class="collapse navbar-collapse nav-link " id="collapsibleNavbar">
+        <ul class="navbar-nav display-7 ">
+          <li id="sarga" >
+              <a href="https://www.facebook.com/profile.php?id=100089309928528" class="nav-link text-white" target="_blank">
+              <i id="sarga" data-feather="facebook"></i>
+            </a>
+          </li>
+          <li  id="sarga" >
+            <a href="#" class="nav-link " target="_blank">
+              <i id="sarga" data-feather="youtube"></i>
+            </a>
+          </li>
+          <li   >
+            <a href="#" class="nav-link " target="_blank">
+              <i id="sarga" data-feather="instagram"></i>
+            </a>
+          </li>
+          <li   >
+            <a id="sarga" class="nav-link " target="_self" href="mechwart.html" >Fizetés</a>
+          </li>
+          <li   >
+            <a id="sarga" class="nav-link " target="_self" href="honfoglalo.html">Kapcsolat</a>
+          </li>
+          <li   >
+            <a id="sarga" class="nav-link " target="_self" href="troli.html">Belépés</a>
+          </li>  
+          <li   >
+            <a id="sarga"   class="nav-link " target="_self" href="zengohegy.html">Regisztráció</a>
+          </li>  
+    
+      </ul>
+    </div>
     </nav>
-  </header>
-
-  <main class="page-content container text-white">
-    <header class="text-center mb-5">
-      <div class="d-flex justify-content-center mb-4">
-        <img src="honfoglalo/logo.png" class="hero-image" alt="Honfoglaló logó">
-      </div>
-      <h1 class="display-5 fw-semibold">Honfoglaló</h1>
-      <p class="lead">Egy magyar fejlesztésű online stratégiai kvízjáték, amelyben kérdésekre válaszolva lehet meghódítani Magyarország megyéit.</p>
-      <p><a href="index.html" class="badge-custom">Vissza a főoldalra</a></p>
+      <br>
+      <br>
+      <br>
+    
     </header>
 
-    <section class="page-section">
-      <h2 class="section-heading">A játék története</h2>
-      <p class="text-justify">A <strong>Honfoglaló</strong> 2002. október 20-án debütált az interneten, és rövid idő alatt nemcsak Magyarországon, hanem külföldön is népszerűvé vált. Csehül <em>Dobyvatel</em>, míg spanyolul, angolul, bolgárul, oroszul, arabul, törökül, portugálul, románul, németül, franciául, lengyelül, szlovénül és szerbül <em>Triviador</em> néven találkozhatunk vele. 2003. február 11-től társasjáték formájában is játszható. A játék felhasználói maguk is küldhetnek be kérdéseket, amelyek egy ellenőrzési folyamat után bekerülhetnek a kvízbe.</p>
-    </section>
-
-    <section class="page-section">
-      <h2 class="section-heading">Játékmenet</h2>
-      <div class="row g-4 align-items-start">
-        <div class="col-lg-4">
-          <figure class="figure">
-            <img src="honfoglalo/League.png" class="figure-img img-fluid" alt="Honfoglaló ligák">
-            <figcaption class="figure-caption text-center">Klánok a Honfoglalóban</figcaption>
-          </figure>
-        </div>
-        <div class="col-lg-8">
-          <div class="highlight-box">
-            <p class="text-justify">A Honfoglaló célja minél több megye elfoglalása Magyarország térképén. A játék egy faluban indul, majd a nehézségi fok kiválasztása után kezdődik a küzdelem. A 3 játékos színe: piros, zöld és kék (korábban sárga). A bázisfoglalás után kérdésekre válaszolva lehet megyéket szerezni, a vár elfoglalásához pedig három sikeres kör szükséges.</p>
-            <p class="text-justify">Ha mindkét játékos helyesen válaszol, tippelős kérdés dönt, ahol a pontosabb, vagy azonos válasz esetén a gyorsabb játékos a nyertes. A Honfoglalóban számos játékmód érhető el, például villámháború, hosszú hadjárat, junior játék, mini bajnokság vagy játék barátokkal. A külföldi változatok felépítése hasonló, csupán a térkép változik az adott országra.</p>
+    <div class="container">
+      <div class="card mb-3  text-white"  style="max-width: 540px;">
+        <div class="row ">
+          <div class="col-md-7">
+  
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <p class="card-text display-5"></p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="page-section">
-      <h2 class="section-heading">Ligák és ranglisták</h2>
-      <h3 class="h5 text-uppercase">Négyféle ranglista</h3>
-      <ul>
-        <li>Barát</li>
-        <li>Személyes</li>
-        <li>Megye</li>
-        <li>Klán</li>
-      </ul>
-      <h3 class="h5 text-uppercase mt-4">Mindegyik ranglista három kategóriára tagolódik</h3>
-      <ul>
-        <li><strong>Mindenidők:</strong> Az összes eddig gyűjtött XP alapján, ligáktól függetlenül.</li>
-        <li><strong>Heti:</strong> A jelenlegi helyezésed a ligán belül, megmutatva, hogy feljutó, kieső vagy maradó pozícióban állsz.</li>
-        <li><strong>Múltheti:</strong> A legutóbbi hét eredményeinek összegzése.</li>
-      </ul>
-    </section>
-
-    <div class="section-divider"></div>
-
-    <p class="mb-0"><a href="https://hu.wikipedia.org/wiki/Honfoglal%C3%B3" target="_blank" rel="noopener">Forrás: Wikipédia</a></p>
-  </main>
-
-  <footer class="page-footer">
-    <small>&copy; <span id="currentYear"></span> Pusztai Dénes. Minden jog fenntartva.</small>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    feather.replace();
-  </script>
-</body>
-</html>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br>          <br><br><br><br><br><br><br><br><br><br><br><br><br>          <br><br><br><br><br><br><br><br><br><br><br><br><br>          <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <script>
+      feather.replace()
+    </script>
+  </body>  </html>
