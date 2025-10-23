@@ -1,59 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	 <link rel="stylesheet" type="text/css" href="zengo/style.css">
-
-	 <meta charset="utf-8">
-	 <title>Zengő</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zengő hegy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div id="content" >
-	<h1>A Zengő hegy<sub><a href="https://hu.wikipedia.org/wiki/Zeng%C5%91_(hegy)">(Wikipédia)</a>;<a class="nav-link text-white" href="index.html">Vissza a főoldalra</a></sub></h1>
-	    
-	<div id="jobb">
-		<img  src="zengo/zengokilato.jpg" id="imageright" alt="" title="Kilátó a Zengőn">
-		<p class="kepszoveg">Kilátó a Zengőn</p>
-	</div>
+  <header class="fejlec">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Pusztai Dénes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menü megnyitása">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/profile.php?id=100089309928528" target="_blank" rel="noopener" aria-label="Facebook">
+                <i data-feather="facebook"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-label="YouTube">
+                <i data-feather="youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-label="Instagram">
+                <i data-feather="instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mechwart.html">Fizetés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="honfoglalo.html">Kapcsolat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="troli.html">Belépés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zengohegy.html">Regisztráció</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-	<p>A Zengő a Mecsek legmagasabb hegye. Pécstől északkeleti irányban, a Kelet-Mecsek legkevésbé bolygatott tájain fekszik, magassága 682 méter. Déli szomszédja a Hosszúhetény fölé magasodó Hármashegy. Alkotó kőzetei a permi homokkő, a jura és triász mészkő. A hegy egyben Baranya megye legmagasabb pontja is.</p>
+  <main class="page-content container text-white">
+    <header class="text-center mb-5">
+      <h1 class="display-4 fw-semibold">A Zengő hegy</h1>
+      <p class="lead">A Mecsek legmagasabb pontja, legendákkal és természeti kincsekkel átszőve.</p>
+      <p>
+        <a href="https://hu.wikipedia.org/wiki/Zeng%C5%91_(hegy)" target="_blank" rel="noopener" class="badge-custom">Wikipédia</a>
+        <span class="mx-2">|</span>
+        <a href="index.html" class="badge-custom">Vissza a főoldalra</a>
+      </p>
+    </header>
 
-	<p>Nevének ma már ritkán használt helyi ejtésváltozata Zöngő, középkori neve Vas-hegy. A lábainál elterülő mai és egykori települések: Hosszúhetény, Kisújbánya, Pécsvárad, Pusztabánya, Püspökszentlászló, Zengővárkony, Zobákpuszta. A Zengőalja régiót települések ennél jóval szélesebb körére szokták értelmezni.</p>
+    <section class="page-section">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <figure class="figure">
+            <img src="zengo/zengokilato.jpg" class="figure-img img-fluid" alt="Kilátó a Zengőn" title="Kilátó a Zengőn">
+            <figcaption class="figure-caption text-center">Kilátó a Zengőn</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <p class="text-justify">A Zengő a Mecsek legmagasabb hegye 682 méteres magassággal. Pécstől északkeletre, a Kelet-Mecsek kevésbé bolygatott tájain emelkedik, déli szomszédja a Hármashegy. Alapkőzetei között megtalálható a permi homokkő, valamint a jura és triász mészkő. A hegy Baranya megye legmagasabb pontja.</p>
+          <p class="text-justify">Nevének ritka helyi ejtése Zöngő, a középkorban Vas-hegyként ismerték. A környező települések – Hosszúhetény, Kisújbánya, Pécsvárad, Pusztabánya, Püspökszentlászló, Zengővárkony és Zobákpuszta – mind a Zengőalja régió részét képezik.</p>
+        </div>
+      </div>
+    </section>
 
-	<p>A hegyhez népmondák, legendák, népszokások sora kötődik. Nevét a népmonda azzal magyarázza, hogy a hegy zúgását a belsejében rekedt kincskeresők kiabálása okozza, mások szerint a hegy erdein és völgyein zenélő szél hangja lehet a név eredete.</p>
+    <section class="page-section">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <figure class="figure">
+            <img src="zengo/marevar.jpg" class="figure-img img-fluid" alt="Máré vára" title="Máré vára">
+            <figcaption class="figure-caption text-center">Máré vára</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2 class="section-heading">Mondák és legendák</h2>
+          <ul>
+            <li>A pécsváradi vár altemplomából induló alagút egészen Zengővárig vezetett, sokaknak adott menedéket az idők során.</li>
+            <li>A legenda szerint virágvasárnapkor megnyílik a hegy gyomra, és a bennrekedt kincskeresők hangja zeng végig a tájon.</li>
+            <li>Zengővárt Miklósvárként is emlegetik; a közeli Máré várához szomorú történetek kötődnek.</li>
+            <li>Püspökszentlászló eredetmondája Szent László király vadászatához kapcsolódik, aki egy menedéket talált a völgyben.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-	<p>A Zengő oldalán, a híres zengővárkonyi szelídgesztenyésben van <b>Rockenbauer Pál</b> természetjáró, televíziós szerkesztő sírja. Ez az ország egyik legnagyobb és leghíresebb szelídgesztenye ligeterdeje, több száz éves példányokkal. </p>
+    <section class="page-section">
+      <h2 class="section-heading">Látnivalók a Zengőn és környékén</h2>
+      <ol>
+        <li>A Fájdalmas Anya búcsújáró helye Hosszúhetény közelében, Kis György faragott Piéta szobrával.</li>
+        <li>A bárányles keresztje a Püspökszentlászló felőli oldalon.</li>
+        <li>A püspökszentlászlói püspöki kastély, arborétum és az Életrendezés Háza.</li>
+        <li>A kastély fölötti Szent László-szobor (Csukás Zoltán, 1903).</li>
+        <li>A pusztabányai üveghuta-maradványok.</li>
+        <li>A hosszúhetényi borbélymúzeum és üvegmúzeum.</li>
+        <li>A hosszúhetényi tájház és pincefalu.</li>
+        <li>Bocz Gyula köztéri szobrai Hosszúhetényben.</li>
+        <li>Máriakép a hosszúhetényi völgyben.</li>
+        <li>A zengővárkonyi szelídgesztenyés és a Míves Tojás Gyűjtemény.</li>
+        <li>A Zengő-kilátó, amely egykori geodéziai mérőtoronyként épült 1978-ban.</li>
+      </ol>
+    </section>
+  </main>
 
-	<h2>A Zengőhöz kötődő mondák</h2>
-	<div id="bal">
-			<img  id="imageleft" src="zengo/marevar.jpg" title="Máré vára" alt="">
-			<p class="kepszoveg">Máré vára</p>
-	</div>
+  <footer class="page-footer">
+    <small>&copy; <span id="currentYear"></span> Pusztai Dénes. Minden jog fenntartva.</small>
+  </footer>
 
-<ul>
-	<li>Az egyik szerint a pécsváradi vár altemploma alól ősi alagút indul, ami felnyúlik egészen a Zengővárig. A néphagyomány szerint az alagút sokszor adott menedéket bujdosóknak, legutóbb az 1848-as forradalom üldözöttjeinek.[2]</li>
-	<li>A Zengő mondájaként ismert történet szerint minden évben egyszer, a virágvasárnapi mise idején megnyílik a hegy gyomra. A hegy felmorajlik, amit a bennrekedt kincskeresők kiabálása okoz, illetve azé a kincskereső asszonyé aki a hegy gyomrában felejtette a csecsemőjét és ettől megőrült. A monda szerint a hegynek tündére vagy szelleme is van. A morajlás után néhány napra a hagyomány szerint nagy szél, ítéletidő támad, amit csak a Püspökszentlászlón valamikor élt öreg remete harangja csillapíthat le.[6]</li>
-	<li>A Zengővárt Miklósvár néven is ismeri a helyi hagyomány, és hozzá valamint a közelben lévő Márévárhoz kötődik az előzőekben már leírt szomorú legenda.</li>
-	<li>Püspökszentlászló eredetmondája szerint Szent László király egy alkalommal amikor a Mecsekben vadászott, egy völgyben lelt menedéket ahol ennek emlékére kápolnát alapított, ami köré falucska nőtt. </li>
-</ul>
-	<h2>A Zengő hegy nevezetességei</h2>
-	<ol>
-		<li>A Fájdalmas Anya, a Zengő Szentséges Csillaga búcsújáró helye Hosszúheténytől három kilométerre, Püspökszentlászló közelében – apró kápolna Kis György faragott fehér mészkő Fájdalmas Szűz Piéta szobrával.</li>
-		<li>A bárányles keresztje a Püspökszentlászló felőli oldalon.</li>
-		<li>A püspökszentlászlói püspöki kastély (ahol valamikor Mindszenty Józsefet tartották fogva), arborétum és a Vácz Jenő alapította Életrendezés Háza</li>
-		<li>A kastély fölötti Szent László-szobor (Csukás Zoltán 1903-as alkotása)</li>
-		<li>A pusztabányai üveghuta-maradványok</li>
-		<li>A hosszúhetényi borbélymúzeum és az üvegmúzeum</li>
-		<li>A hosszúhetényi tájház</li>
-		<li>A hosszúhetényi pincefalu</li>
-		<li>Bocz Gyula köztéri szobrai Hosszúhetényben, köztük a Hetény vezér</li>
-		<li>Máriakép a hosszúhetényi völgyben</li>
-		<li>A zengővárkonyi szelídgesztenyés</li>
-		<li>A zengővárkonyi szalmamúzeum, Míves Tojás Gyűjtemény és tájház</li>
-		<li>A Zengő-kilátó a természetes környezettel kontrasztban álló látványt nyújtó beton torony, de a tetejéről szép panoráma nyílik a Mecsekre. 1978-ban készült geodéziai mérőtoronynak. Az első kilátót ezen a helyen 1895. június 23-án avatták. Terstyánszky László közalapítványi főerdész támogatásával épült, később azonban összedőlt. A helyén 1929-ben a Földművelésügyi Minisztérium állíttatott új tornyot.
-		</li>
-	</ol>
-    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    feather.replace();
+  </script>
 </body>
-
 </html>

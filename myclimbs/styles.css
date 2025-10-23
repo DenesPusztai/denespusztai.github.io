@@ -1,0 +1,353 @@
+:root {
+  --overlay-bg: rgba(59, 58, 58, 0.65);
+  --overlay-bg-strong: rgba(0, 0, 0, 0.35);
+  --accent: #ffd60a;
+  --text-primary: #f8f9fa;
+  --text-muted: #d0ecf7;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("fooldalkepek/latkep2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.45);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-primary) !important;
+  font-size: 1.05rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--accent) !important;
+  transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link svg {
+  width: 22px;
+  height: 22px;
+}
+
+.page-content {
+  background-color: var(--overlay-bg);
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+  margin: 2.5rem auto 4rem;
+  box-shadow: 0 0 45px var(--shadow-color);
+  backdrop-filter: blur(3px);
+}
+
+@media (min-width: 768px) {
+  .page-content {
+    padding: 3rem;
+  }
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+  color: var(--text-primary);
+}
+
+.page-content p,
+.page-content li {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.page-section + .page-section {
+  margin-top: 2rem;
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.link-card {
+  display: block;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--overlay-bg-strong);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  min-width: 220px;
+}
+
+.link-card:hover,
+.link-card:focus {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-4px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.link-card span {
+  display: block;
+}
+
+.link-card .label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.card,
+.list-group-item,
+.table {
+  background-color: var(--overlay-bg-strong) !important;
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.card img,
+.figure img,
+.img-fluid,
+.rounded-img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.figure-caption {
+  color: var(--text-muted);
+}
+
+a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.badge-custom {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: rgba(220, 53, 69, 0.85);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  background-color: rgba(220, 53, 69, 1);
+  transform: translateY(-3px);
+}
+
+footer.page-footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: var(--text-muted);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer.page-footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+footer.page-footer a:hover,
+footer.page-footer a:focus {
+  color: var(--accent);
+}
+
+.figure {
+  margin: 0;
+}
+
+.figure + p {
+  margin-top: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 1.25rem;
+}
+
+ol li,
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.highlight-box {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.lead {
+  color: var(--text-muted);
+}
+
+.section-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+blockquote footer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.table thead th {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.table td,
+.table th {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control,
+.form-select,
+textarea,
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(255, 214, 10, 0.25);
+}
+
+label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.badge-light {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: var(--text-primary);
+}
+
+.carousel-item img {
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--accent);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.hero-image {
+  max-width: 320px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.figure.rounded figure,
+figure.rounded {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  margin: 2.5rem 0;
+}
